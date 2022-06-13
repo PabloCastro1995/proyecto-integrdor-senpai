@@ -1,0 +1,761 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "DM Sans";
+}
+/* NAV */
+.navegacion {
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.logoNexos1 {
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 30%;
+  left: 12%;
+}
+.atajo {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 70px;
+  position: absolute;
+  top: 35%;
+  left: 24%;
+}
+
+#button1 {
+  background-color: rgb(138, 44, 138);
+  color: white;
+  border-radius: 25px;
+  width: 140px;
+  height: 35px;
+  border: none;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+/* HEADER */
+.header {
+  background-image: url(Materiales/manos.jpg);
+  height: 50%;
+  position: relative;
+}
+h1 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+}
+.pHeader {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  right: 28%;
+}
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* MAIN PARTE 1 */
+.art1 {
+  background-color: #1c78fd;
+  display: grid;
+  padding: 50px 90px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "img1 art1"
+    "art2 img2";
+    position: relative;
+}
+.img1 {
+  width: 100%;
+  height: 250px;
+  grid-area: img1;
+  object-fit: cover;
+}
+.img2 {
+  width: 100%;
+  height: 250px;
+  grid-area: img2;
+  margin: 5px;
+  object-fit: cover;
+}
+.contenedor1 {
+  grid-area: art2;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+.contenedor2 {
+  grid-area: art1;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  color: white;
+}
+.tituloSec {
+  font-size: 30px;
+}
+.articuloSec {
+  font-size: 18px;
+  /* margin-right: 66px; */
+}
+/* MAIN PARTE 2 */
+.art2 {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 80px;
+  background-color: white;
+  gap: 40px;
+}
+
+.op1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0px 100px;
+  gap: 25px;
+}
+.titulo2 {
+  font-size: 35px;
+}
+.op2 {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  position: relative;
+}
+
+.iconoMas{
+  position: absolute;
+  right: 10%;
+  top: 15px;
+}
+#red {
+  display: flex;
+  background-color: #dc3545;
+  border-radius: 15px;
+  width: 25%;
+  height: 200px;
+  color: white;
+  flex-direction: column;
+  position: relative;
+}
+#yellow {
+  display: flex;
+  background-color: #ff9007;
+  border-radius: 15px;
+  width: 25%;
+  height: 200px;
+  color: white;
+  flex-direction: column;
+  position: relative;
+}
+#green {
+  display: flex;
+  background-color: #28a745;
+  border-radius: 15px;
+  width: 25%;
+  height: 200px;
+  color: white;
+  flex-direction: column;
+  position: relative;
+}
+#blue {
+  display: flex;
+  background-color: #17a2b8;
+  border-radius: 15px;
+  width: 25%;
+  height: 200px;
+  color: white;
+  flex-direction: column;
+  position: relative;
+}
+.etiqueta {
+  font-size: 25px;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+}
+.icono1 {
+  width: 65px;
+  height: 75px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+/* SECTION */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5298ff;
+  padding: 50px 40px;
+}
+.noticiasTitulo {
+  color: white;
+  font-size: 45px;
+}
+.verTodas {
+  color: white;
+}
+.listNoticias {
+  margin: 30px 20px;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "noti1 noti2 noti3 noti4";
+}
+.texSec {
+  color: rgb(96, 96, 96);
+}
+.noti1 {
+  grid-area: noti1;
+  background-color: white;
+  text-align: left;
+  border-radius: 15px;
+  position: relative;
+}
+.noti2 {
+  grid-area: noti2;
+  background-color: white;
+  text-align: left;
+  border-radius: 15px;
+  position: relative;
+}
+.noti3 {
+  grid-area: noti3;
+  background-color: white;
+  text-align: left;
+  border-radius: 15px;
+  position: relative;
+}
+.noti4 {
+  grid-area: noti4;
+  background-color: white;
+  text-align: left;
+  border-radius: 15px;
+  position: relative;
+}
+#noticia3 {
+  margin-bottom: 5px;
+  margin-bottom: 60px;
+}
+#noticia4 {
+  margin-bottom: 5px;
+  margin-bottom: 80px;
+}
+.noticia1 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 5px;
+  top: 200px;
+  left: 30px;
+
+}
+.noticias2 {
+  display: flex;
+  flex-direction: column;
+  margin: 15% 10% 12% 10%;
+  gap: 13px;
+}
+.reloj {
+  display: flex;
+  flex-direction: row;
+  padding-left: 25%;
+}
+.noti1-1 {
+  position: relative;
+}
+.fotoNocitia {
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+}
+.boton {
+  background-color: rgb(138, 44, 138);
+  color: white;
+  border-radius: 25px;
+  width: 120px;
+  height: 25px;
+  border: none;
+  position: absolute;
+  top: 150px;
+  left: 15px;
+}
+.verMas {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+    bottom: 8px;
+    right: 15px;
+}
+.fotoFlecha {
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+}
+/* FOOTER PARTE 1 */
+.imgEscritorio {
+  width: 100%;
+  height: 100%;
+}
+.part1 {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "izquierda derecha";
+}
+.imgEscritorio {
+  width: 100%;
+  height: 260px;
+}
+.izquierda {
+  grid-area: izquierda;
+  margin: 50px 5px 90px 100px;
+}
+.derecha {
+  grid-area: derecha;
+  margin: 50px 60px 90px 10px;
+  gap: 20px;
+}
+.contacto {
+  margin: 0px 0px 10px 155px;
+  font-size: 45px;
+}
+.forms {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tCitado {
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  resize: none;
+}
+#mensaje {
+  width: 250px;
+  height: 82px;
+  border-radius: 5px;
+  resize: none;
+}
+.button2 {
+  margin: 15px 0px 0px 190px;
+  background-color: rgb(138, 44, 138);
+  color: white;
+  border-radius: 25px;
+  width: 140px;
+  height: 35px;
+  border: none;
+}
+.hr1 {
+  height: 10px;
+  background-color: #4c3883;
+}
+/* FOOTER PARTE 2 */
+.part2 {
+  background-color: #7749f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "foot1 foot2";
+}
+.foot1 {
+  grid-area: foot1;
+  display: flex;
+  flex-direction: row;
+}
+.foot1 > ul {
+  list-style: none;
+  color: white;
+}
+.foot1 > ul {
+  margin: 20px 0px 70px 0px;
+}
+.logoNexos2 {
+  width: 150px;
+  height: 30px;
+  display: flex;
+  margin: 25px 0px 0px 140px;
+}
+.foot2 {
+  grid-area: foot2;
+  text-align: end;
+  margin: 10px 190px 0px 0px;
+}
+.seguinos {
+  color: white;
+  font-size: 25px;
+}
+.imgRedes {
+  width: 35px;
+  height: 35px;
+}
+
+.hr2 {
+  background-color: white;
+  height: 2px;
+  margin-bottom: 40px;
+  position: relative;
+  bottom: 50px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "modalIzq modalDer";
+}
+.modalIzq {
+  grid-area: modalIzq;
+  background-image: url(Materiales/imagen-modal.JPG);
+  background-size: 100% 100%;
+  border-radius: 20px 0px 0px 20px;
+}
+.modalDer {
+  grid-template-areas: modalDer;
+  padding: 0px 20px;
+}
+.registrar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.parte1 {
+  width: 500px;
+  height: 120px;
+  margin: 30px 0px 30px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "part1 part2 part2 part2 part2";
+}
+.parte2 {
+  width: 500px;
+  height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "part3 part4 part4 part4 part4";
+}
+#miEmpr1 {
+  background-color: #5298ff;
+  grid-area: part1;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 10px 9px 41px grey;
+}
+#miEmpr2 {
+  grid-area: part2;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 10px 9px 41px grey;
+  padding: 10px 0px 0px 25px;
+}
+.miEmpresa {
+  font-size: 24px;
+  color: #5298ff;
+}
+.pEmpresa {
+  font-size: 20px;
+  color: grey;
+}
+.miOrganizacion {
+  font-size: 24px;
+  color: #7749f8;
+}
+.pOrganizacion {
+  font-size: 20px;
+  color: grey;
+}
+#miOrg1 {
+  grid-area: part3;
+  background-color: #7749f8;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 10px 9px 41px grey;
+}
+#miOrg2 {
+  grid-area: part4;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 10px 9px 41px grey;
+  padding: 10px 140px 0px 25px;
+}
+.iconoFlecha {
+  width: 20px;
+  height: 20px;
+  margin: 0px 0px 0px 320px;
+}
+.icono2 {
+  width: 50px;
+  height: 50px;
+  margin: 35px 0px 0px 25px;
+}
+.icono3 {
+  width: 50px;
+  height: 50px;
+  margin: 35px 0px 0px 25px;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* RESPOSIVE */
+@media (max-width: 390px) {
+    /* NAV */
+  
+    .atajo{
+      display: none;
+  }
+  .navegacion{
+    position: relative;
+    width: 100%;
+  }
+  .logoNexos1{
+    position: absolute;
+    margin: 0px;
+    top: 25%;
+    left: 10%;
+  }
+  .boton1{
+    left: 55%;
+}
+  /* HEADER */
+  .header{
+    background-repeat: no-repeat;
+   
+  }
+  h1{
+    text-align: center;
+    top: 10%;
+    right: 7%;
+  }
+  .pHeader{
+    top: 45%;
+    right: 5%;
+
+  }
+  /* MAIN PARTE 1 */
+  
+  .art1{
+      padding-bottom: 500px;
+  }
+  .contenedor1{
+    grid-area: parte1;
+    top: 5%;
+    left: 0%;
+    text-align: center;
+  }
+  .articuloSec{
+    grid-area: parte1;
+  
+  }
+  .contenedor2{
+    grid-area: parte2;
+    top: 59%;
+    left: 0%;
+    text-align: center;
+  }
+  .img2{
+    display: none;
+  }
+  .img1{
+    display: none;
+  }
+  /* MAIN PARTE 2 */
+  .art2{
+    padding: 10px 10px;
+  }
+  .op2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .op1{
+    margin: 0px 0px;
+  }
+  #red{
+    width: 60%;
+  }
+  #yellow{
+    width: 60%
+  }
+  #green{
+    width: 60%
+  }
+  #blue{
+    width: 60%
+  }
+   /* SECTION */
+   .pSection{
+    display: none;
+}
+.listNoticias{
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+  /* FOOTER PARTE 1 */
+  .izquierda{
+    display: none;
+  }
+  .part1{
+    display: flex;
+  }
+  .derecha{
+    margin: 0px;
+  }
+  .contacto{
+    margin: 0px;
+    margin-left: 35%;
+  }
+  .forms{
+    flex-direction: column;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
+  .button2{
+    margin: 0px;
+    margin-top: 5%;
+    margin-left: 45%;
+    margin-bottom: 5%;
+  }
+  /* FOOTER PARTE 2 */
+  .part2{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "footerizq footerder";
+      position: relative;
+  }
+  .listadoFooter{
+    display: none;
+  }
+  .foot1{
+    grid-area: footerizq;
+    position: absolute;
+    top: 12%;
+    left: 16%;
+  }
+  .logoNexos2{
+    margin: 0px;
+  }
+  .foot2{
+    grid-area: footerder;
+    margin: 0px;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+  }
+  /* MODAL */
+  .modalIzq{
+    display: none;
+  }
+  .modalDer{
+    position: relative;
+  }
+  .close{
+    float: inline-start;
+    position: absolute;
+    left: 265px;
+  }
+  .registrar{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+  }
+  .parte1{
+    position: absolute;
+    top: 17%;
+    width: 270px;
+
+  }
+  #miEmpr2{
+    padding: 7px 0px 0px 9px;
+  }
+  #miOrg2{
+    padding: 7px 0px 0px 9px;
+  }
+  .icono2{
+    margin: 50px 10px 0px 10px;
+  }
+  .icono3{
+    margin: 50px 10px 0px 10px;
+  }
+  .parte2{
+    position: absolute;
+    top: 52%;
+    width: 270px;
+
+  }
+}
+
+
